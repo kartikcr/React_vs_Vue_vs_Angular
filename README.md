@@ -14,7 +14,7 @@ Make migrations:
 
 Create superuser:
 
-`python3 manage.py createsupe --email a@a.com --username admin`
+`python3 manage.py createsuperuser --email a@a.com --username admin`
 
 runserver: 
 
