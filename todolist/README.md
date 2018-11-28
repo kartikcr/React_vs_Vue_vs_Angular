@@ -9,4 +9,5 @@ Will run the program at port 3000
 ### Installation
 `sudo apt-get install nodejs npm`
 
-
+If you get a node_modules error, run:
+`npm install`
