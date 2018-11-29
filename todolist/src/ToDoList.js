@@ -52,7 +52,7 @@ class ToDoList extends React.Component{
                 </div>
                 <div>
                     <input type="text" value={this.state.task} onChange={this.handleInput} />
-                    <button onClick={this.newTask}> + </button>
+                    <button onClick={this.newTask} name="ToDoList_btn"> + </button>
                 </div>
             </div>
         )
