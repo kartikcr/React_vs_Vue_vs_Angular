@@ -5,22 +5,22 @@ from .models import *
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields=('title', 'author', 'article')
+        fields=('ID','title', 'author', 'article')
 
 
 class CarSerializer(serializers.ModelSerializer):
     class Meta:
         model = Car
-        fields = ('company', 'model', 'price')
+        fields = ('ID','company', 'model', 'price')
 
 
 class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
-        fields = ('title', 'author', 'article')
+        fields = ('ID','title', 'author', 'article')
 
 
 class ImageTableSerializer(serializers.ModelSerializer):
     class Meta:
         model = ImageTable
-        fields = ('image_url','image_alt_text')
+        fields = ('ID','image_url','image_alt_text')
