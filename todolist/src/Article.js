@@ -27,11 +27,11 @@ class ArticleRestDisplay extends Component{
                 {this.state.data.map(
                 (data,index) => (
                     <div>
-                        <h1> {data.title} </h1>
+                        <h1 id={"A"+data.ID+"_title"}> {data.title} </h1>
                         <br/>
-                        <h2>{data.author}</h2>
+                        <h2 id={"A"+data.ID+"_author"}>{data.author}</h2>
                         <br/>
-                        <span>{data.article}</span><hr/>
+                        <span id={"A"+data.ID+"_article"}>{data.article}</span><hr/>
                     </div>
                 )
                 )}
