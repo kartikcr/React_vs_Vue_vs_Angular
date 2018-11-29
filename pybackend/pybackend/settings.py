@@ -1,42 +1,3 @@
-Idk
-Abhi to nahi
-Chrome me extension daldo
-cool
-accha
-tune aur usko kuch config kiya? chrome extension/
-??
-Not needed
-Using django-cors-headers
-Start by installing django-cors-headers using pip
-
-pip install django-cors-headers
-
-You need to add it to your project settings.py file:
-INSTALLED_APPS = (
-    ##...
-    'corsheaders'
-)
-Next you need to add corsheaders.middleware.CorsMiddleware middleware to the middleware classes in settings.py
-
-MIDDLEWARE_CLASSES = (
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.BrokenLinkEmailsMiddleware',
-    'django.middleware.common.CommonMiddleware',
-    #...
-)
-You can then, either enable CORS for all domains by adding the following setting
-
-CORS_ORIGIN_ALLOW_ALL = True
-Or Only enable CORS for specified domains:
-
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = (
-    'http//:localhost:8000',
-)
-abey itna kar dega kya?
-server ps?
-BF18529
 """
 Django settings for pybackend project.
 
@@ -52,7 +13,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
