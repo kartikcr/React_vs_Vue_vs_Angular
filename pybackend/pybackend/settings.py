@@ -1,3 +1,42 @@
+Idk
+Abhi to nahi
+Chrome me extension daldo
+cool
+accha
+tune aur usko kuch config kiya? chrome extension/
+??
+Not needed
+Using django-cors-headers
+Start by installing django-cors-headers using pip
+
+pip install django-cors-headers
+
+You need to add it to your project settings.py file:
+INSTALLED_APPS = (
+    ##...
+    'corsheaders'
+)
+Next you need to add corsheaders.middleware.CorsMiddleware middleware to the middleware classes in settings.py
+
+MIDDLEWARE_CLASSES = (
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    #...
+)
+You can then, either enable CORS for all domains by adding the following setting
+
+CORS_ORIGIN_ALLOW_ALL = True
+Or Only enable CORS for specified domains:
+
+CORS_ORIGIN_ALLOW_ALL = False
+
+CORS_ORIGIN_WHITELIST = (
+    'http//:localhost:8000',
+)
+abey itna kar dega kya?
+server ps?
+BF18529
 """
 Django settings for pybackend project.
 
@@ -13,7 +52,7 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(_file_)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -25,7 +64,7 @@ SECRET_KEY = '&(u0^e3#vsh2&!j5jl5vo*ibwjzc-ks+bdjrt4+#q&v$!rz@8p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,10 +77,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'corsheaders',
     'pyapi',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.BrokenLinkEmailsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,3 +163,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+CORS_ORIGIN_ALLOW_ALL = True
