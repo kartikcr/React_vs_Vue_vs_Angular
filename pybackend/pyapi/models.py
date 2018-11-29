@@ -8,6 +8,7 @@ class Article(models.Model):
     title = models.TextField()
     author = models.TextField()
     article = models.TextField()
+    ID = models.AutoField(primary_key=True)
 
 
 class Car(models.Model):
@@ -15,9 +16,11 @@ class Car(models.Model):
     company = models.TextField()
     model = models.TextField()
     price = models.BigIntegerField()
+    ID = models.AutoField(primary_key=True)
 
 
 class ImageTable(models.Model):
     # Simulate image rendering
     image_alt_text = models.TextField()
     image_url = models.TextField()
+    ID = models.AutoField(primary_key=True)
