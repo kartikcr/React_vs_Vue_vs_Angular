@@ -1,8 +1,13 @@
 import Vue from 'vue'
-import ToDo from './Todo.vue'
+import App from './App'
+import router from './router'
 
 Vue.config.productionTip = false
 
+/* eslint-disable no-new */
 new Vue({
-    render: h => h(ToDo)
-}).$mount('#app')
+    el: '#app',
+    router,
+    components: { App },
+    template: '<App/>'
+})
