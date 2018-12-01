@@ -10,7 +10,7 @@
                                 <div class="col-md-4">
                                     <h1 :id="`image_text_${result.ID}`">{{result.image_alt_text}}</h1>
                                     <div class="card mb-4 box-shadow">
-                                        <img class="card-img-top" v-bind:src="result.image_url" alt="Card image cap" :id="`image_text_${result.ID}`"/>
+                                        <img class="card-img-top" v-bind:src="result.image_url" alt="Card image cap" :id="`image_${result.ID}`"/>
                                     </div>
                                 </div>
                             </div>
