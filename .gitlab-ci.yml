@@ -5,7 +5,7 @@ stages:
   - build-react
 
 build site:
-  stage: build
+  stage: build-vue
   before_script:
     - cd ~/vue-app
     - apt-get update
@@ -22,7 +22,7 @@ build site:
       - dist/
 
 build site:
-  stage: build
+  stage: build-react
   before_script:
     - cd ~/todolist
     - apt-get update
