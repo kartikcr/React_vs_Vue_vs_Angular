@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MATS" duration-ms="14228" started-at="2018-12-01T00:45:42Z" finished-at="2018-12-01T00:45:57Z">
+    <groups>
+      <group name="mats">
+        <method signature="ToDoTestVue.createLocationAlias()[pri:0, instance:com.test.ToDoTestVue@59e5ddf]" name="createLocationAlias" class="com.test.ToDoTestVue"/>
+      </group> <!-- mats -->
+    </groups>
+    <test name="todo_test" duration-ms="14228" started-at="2018-12-01T00:45:42Z" finished-at="2018-12-01T00:45:57Z">
+      <class name="com.test.ToDoTestVue">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.test.ToDoTestVue@59e5ddf]" name="beforeClass" is-config="true" duration-ms="3870" started-at="2018-11-30T19:45:42Z" finished-at="2018-11-30T19:45:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAC]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="createLocationAlias()[pri:0, instance:com.test.ToDoTestVue@59e5ddf]" name="createLocationAlias" duration-ms="9631" started-at="2018-11-30T19:45:46Z" finished-at="2018-11-30T19:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLocationAlias -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.test.ToDoTestVue@59e5ddf]" name="afterClass" is-config="true" duration-ms="707" started-at="2018-11-30T19:45:56Z" finished-at="2018-11-30T19:45:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.test.ToDoTestVue -->
+    </test> <!-- todo_test -->
+  </suite> <!-- MATS -->
+</testng-results>
