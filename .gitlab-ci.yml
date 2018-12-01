@@ -1,33 +1,18 @@
 image: node:latest
 
 stages:
-  - build-vue
-  - build-react
+  - build
 
-build site:
-  stage: build-vue
-  before_script:
+cache:
+  paths:
+    - node_modules/
+
+install_dependencies:
+  stage: build
+  script:
     - cd vue-app
-    - apt-get update
-    - apt-get install zip unzip nodejs npm -y
-    - npm install --progress=false
-  script:
+    - npm install
     - npm run build
   artifacts:
-    expire_in: 1 week
     paths:
-      - dist/
-
-build site:
-  stage: build-react
-  before_script:
-    - cd todolist
-    - apt-get update
-    - apt-get install zip unzip nodejs npm -y
-    - npm install --progress=false
-  script:
-    - npm run build
-  artifacts:
-    expire_in: 1 week
-    paths:
-      - dist/
+      - node_modules/
