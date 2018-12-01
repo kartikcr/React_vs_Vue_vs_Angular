@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/shraddhabhadauria/Downloads/selenium-html-runner-3.13.0.jar"/>
+	<classpathentry kind="lib" path="/Users/shraddhabhadauria/Downloads/selenium-server-standalone-3.14.0.jar"/>
+	<classpathentry kind="lib" path="/Users/shraddhabhadauria/Desktop/SE/Project/Shraddha_Project/libs/selenium-server-standalone-3.13.0.jar"/>
+	<classpathentry kind="lib" path="/Users/shraddhabhadauria/Desktop/SE/Project/Shraddha_Project/libs/testng.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

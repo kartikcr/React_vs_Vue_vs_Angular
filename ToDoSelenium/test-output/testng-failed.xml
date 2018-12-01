@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [MATS]">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="platform" value="MAC"/>
+  <test name="todo_test(failed)">
+    <classes>
+      <class name="com.test.ToDoTest">
+        <methods>
+          <include name="afterClass"/>
+          <include name="createLocationAlias"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.test.ToDoTest -->
+    </classes>
+  </test> <!-- todo_test(failed) -->
+</suite> <!-- Failed suite [MATS] -->

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MATS">
+	<parameter name="browser" value="firefox" />
+	<parameter name="platform" value="windows" />
+   <test name="todo_test">
+
+   <classes>
+      <class name="com.test.ToDoTest" />
+ 	</classes>
+   </test>
+</suite>
