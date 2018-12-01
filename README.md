@@ -1,6 +1,25 @@
-# React_vs_vue
+# Python backend
 
-### installation steps
+### API reference
+
+Classes and attributes:
+
+1. Car  
+GET: pyapi/cars  
+Attributes: company (text), model (text), price (integer)  
+  
+2. Article  
+GET: pyapi/articles  
+Attributes: title(text), author(text), article(text)  
+
+3. ImageTable  
+GET: pyapi/images  
+Attributes: image_alt_text (text), image_url(text)  
+
+4. Admin
+Access: /admin
+
+### Installation steps
 Ensure Django and DRF are installed: 
 
 `pip install Django`
