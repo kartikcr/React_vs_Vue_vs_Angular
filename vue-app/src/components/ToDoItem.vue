@@ -2,9 +2,9 @@
     <div class="container">
         <div class="ToDoItem">
             <p class="ToDoItem-Text">{{todo.text}}</p>
-            <div class="ToDoItem-Delete justify-content-md-center"
+            <button class="ToDoItem-Delete justify-content-md-center"
                  @click="deleteItem(todo)">-
-            </div>
+            </button>
         </div>
     </div>
 </template>

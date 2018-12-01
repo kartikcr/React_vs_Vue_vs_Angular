@@ -1,25 +1,17 @@
 <template>
     <div id="app">
         <router-view>
-            <router-link  to="/text">
-                <h4>Check Text rendering</h4>
-            </router-link>
-            <router-link  to="/images">
-                <h4>Check images rendering</h4>
-            </router-link>
-            <router-link  to="/table">
-                <h4>Check Table rendering</h4>
-            </router-link>
-            <router-link  to="/todo">
-                <h4>Check Todo App</h4>
-            </router-link>
         </router-view>
+        <vue-text></vue-text>
+        <>
     </div>
 </template>
 
 <script>
+    import VueText from "./components/Vue-Text";
     export default {
         name: 'app',
+        components: {VueText},
         template: '<App/>'
     }
 </script>

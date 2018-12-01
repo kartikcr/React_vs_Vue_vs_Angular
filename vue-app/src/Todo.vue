@@ -11,7 +11,7 @@
                               :key="todo.id"/>
                 </div>
                 <input type="textbox" v-model="todo" v-on:keyup.enter="createNewToDoItem"/>
-                <div class="ToDo-Add" @click="createNewToDoItem()">+</div>
+                <button class="ToDo-Add" @click="createNewToDoItem()">+</button>
             </div>
         </div>
     </div>
