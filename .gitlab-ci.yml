@@ -10,7 +10,7 @@ cache:
 install_dependencies:
   stage: build
   script:
-    - cd vue-app
+    - cd todolist
     - npm install
     - npm run build
   artifacts:
