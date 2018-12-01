@@ -7,13 +7,10 @@ stages:
 build site:
   stage: build-vue
   before_script:
-    - cd ~/vue-app
+    - cd vue-app
     - apt-get update
     - apt-get install zip unzip nodejs npm -y
     - npm install --progress=false
-  cache:
-    paths:
-    - node_modules/
   script:
     - npm run build
   artifacts:
@@ -24,13 +21,10 @@ build site:
 build site:
   stage: build-react
   before_script:
-    - cd ~/todolist
+    - cd todolist
     - apt-get update
     - apt-get install zip unzip nodejs npm -y
     - npm install --progress=false
-  cache:
-    paths:
-    - node_modules/
   script:
     - npm run build
   artifacts:
